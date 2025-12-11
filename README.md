@@ -345,3 +345,31 @@ Ana endpointler:
   - Delete butonu.
 - Audit Logs sayfası → `/api/v1/audit-logs` üzerinden filtreli liste.
 - Promotion sayfası → `/api/v1/promote` endpoint’i ile dry-run veya gerçek promotion.
+
+---
+
+## 📸 Ekran Görüntüleri
+
+### API ve Dokümantasyon
+
+![Swagger API Docs](./result_screenschots/swagger_api-docs.png)
+
+### Admin UI – Login
+
+![Admin Login](./result_screenschots/toggle_admin_login.png)
+
+### Admin UI – Feature Flags
+
+![Feature Flags](./result_screenschots/toggle_admin_features.png)
+
+### Admin UI – Audit Logs
+
+![Audit Logs](./result_screenschots/toggle_admin_audit-logs.png)
+
+### Admin UI – Environment Promotion
+
+![Promotion](./result_screenschots/toggle_admin_promotion.png)
+
+### Monitoring – Prometheus
+
+![Prometheus Metrics](./result_screenschots/prometheus.png)
