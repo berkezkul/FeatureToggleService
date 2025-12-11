@@ -229,7 +229,7 @@ Assignment’te tanımlanan tablo ilişkilerini gösteren görsel ER diyagramı:
 
 ![Database ER Diagram](./er_diagram.png)
 
-Bu diyagram, **tenants → feature_flags → features** ilişkisini ve değişikliklerin `audit_logs` tablosunda nasıl izlendiğini MySQL Workbench tarzı kutulu görünümle özetler.
+Bu diyagram, **tenants → feature_flags → features** ilişkisini ve değişikliklerin `audit_logs` tablosunda nasıl izlendiğini MySQL Workbench tarzı görünümle özetler.
 
 ---
 
