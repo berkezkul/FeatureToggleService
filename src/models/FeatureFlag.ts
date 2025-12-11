@@ -34,7 +34,8 @@ export class FeatureFlagModel {
 
   async findAll(query: FeatureFlagQuery = {}): Promise<FeatureFlag[]> {
     let queryBuilder = this.db('feature_flags')
-      .select('feature_flags.*')
+      .select('feature_flags.*', 'features.name as feature_name')
+      .leftJoin('features', 'feature_flags.feature_id', 'features.id')
       .orderBy('feature_flags.created_at', 'desc');
 
     if (query.tenant_id) {

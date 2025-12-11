@@ -15,7 +15,7 @@
     "migrate:latest": "cross-env NODE_ENV=development npx knex migrate:latest --knexfile knexfile.js",
     "migrate:rollback": "cross-env NODE_ENV=development npx knex migrate:rollback --knexfile knexfile.js",
     "migrate:make": "cross-env NODE_ENV=development npx knex migrate:make --knexfile knexfile.js",
-    "seed:run": "knex seed:run"
+    "seed:dev": "cross-env NODE_ENV=development npx knex seed:run --knexfile knexfile.js"
   },
   "keywords": [
     "feature-toggle",
