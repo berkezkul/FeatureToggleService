@@ -3,7 +3,7 @@
 Multi-tenant Feature Toggle Service – **Node.js + TypeScript + PostgreSQL + Redis + React Admin UI**
 
 Bu servis, birden fazla tenant’ın (müşteri / ürün hattı) **env (dev / staging / prod)** bazında feature flag yönetmesini sağlar.  
-Amaç, Zebra Engineering Assignment’ta istenen şekilde **ölçeklenebilir, güvenli, test edilebilir ve gözlemlenebilir** bir toggle platformu sunmaktır.
+Amaç, **ölçeklenebilir, güvenli, test edilebilir ve gözlemlenebilir** bir toggle platformu sunmaktır.
 
 ---
 
