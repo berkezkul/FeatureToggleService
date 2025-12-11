@@ -223,6 +223,49 @@ Detaylı ve güncel şema için doğrudan `migrations/` klasöründeki TypeScrip
 
 ---
 
+### 🗺️ ER Diagram
+
+Aşağıdaki diyagram, tablolar arasındaki ilişkileri görsel olarak özetler:
+
+```mermaid
+erDiagram
+  TENANTS ||--o{ FEATURE_FLAGS : "has feature flags"
+  FEATURES ||--o{ FEATURE_FLAGS : "is toggled by"
+  FEATURE_FLAGS }o--o{ AUDIT_LOGS : "changes logged in"
+
+  TENANTS {
+    uuid id PK
+    string name
+  }
+
+  FEATURES {
+    uuid id PK
+    string name
+    string description
+  }
+
+  FEATURE_FLAGS {
+    uuid id PK
+    uuid tenant_id FK
+    uuid feature_id FK
+    string env
+    boolean enabled
+    string strategy_type
+  }
+
+  AUDIT_LOGS {
+    uuid id PK
+    string action
+    string entity_type
+    uuid entity_id
+    string actor
+  }
+```
+
+Bu diyagram, assignment’ta tanımlanan **tenants → feature_flags → features** ilişkisini ve değişikliklerin `audit_logs` tablosunda nasıl izlendiğini hızlıca görselleştirmek için eklenmiştir.
+
+---
+
 ## ⚙️ Ölçeklenebilirlik ve Güvenlik
 
 - **Stateless backend**:  
