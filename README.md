@@ -227,7 +227,7 @@ Detaylı ve güncel şema için doğrudan `migrations/` klasöründeki TypeScrip
 
 Assignment’te tanımlanan tablo ilişkilerini gösteren görsel ER diyagramı:
 
-![Database ER Diagram](./er_diagram.png)
+![Database ER Diagram](./result_screenshots/er_diagram.png)
 
 Bu diyagram, **tenants → feature_flags → features** ilişkisini ve değişikliklerin `audit_logs` tablosunda nasıl izlendiğini MySQL Workbench tarzı görünümle özetler.
 
@@ -356,20 +356,20 @@ Ana endpointler:
 
 ### Admin UI – Login
 
-![Admin Login](./result_screenschots/toggle_admin_login.png)
+![Admin Login](./result_screenshots/toggle_admin_login.png)
 
 ### Admin UI – Feature Flags
 
-![Feature Flags](./result_screenschots/toggle_admin_features.png)
+![Feature Flags](./result_screenshots/toggle_admin_features.png)
 
 ### Admin UI – Audit Logs
 
-![Audit Logs](./result_screenschots/toggle_admin_audit-logs.png)
+![Audit Logs](./result_screenshots/toggle_admin_audit-logs.png)
 
 ### Admin UI – Environment Promotion
 
-![Promotion](./result_screenschots/toggle_admin_promotion.png)
+![Promotion](./result_screenshots/toggle_admin_promotion.png)
 
 ### Monitoring – Prometheus
 
-![Prometheus Metrics](./result_screenschots/prometheus.png)
+![Prometheus Metrics](./result_screenshots/prometheus.png)
