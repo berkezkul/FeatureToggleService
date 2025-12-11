@@ -349,7 +349,7 @@ Ana endpointler:
 
 ### API ve Dokümantasyon
 
-![Swagger API Docs](./result_screenschots/swagger_api-docs.png)
+![Swagger API Docs](./result_screenshots/swagger_api-docs.png)
 
 ### Admin UI – Login
 
