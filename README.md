@@ -99,9 +99,6 @@ Servisler:
 - Admin UI (local çalıştırırsanız): `http://localhost:5173`
 - Prometheus: `http://localhost:9090`
 - Grafana: `http://localhost:3001` (varsayılan kullanıcı: `admin` / `admin`)
-
-Detaylı senaryolar için `QUICK_START.md` ve `DEPLOYMENT.md` dosyalarına bakabilirsiniz.
-
 ---
 
 ## 📁 Klasör Yapısı ve Katmanlar
