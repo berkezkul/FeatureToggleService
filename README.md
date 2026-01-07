@@ -1,4 +1,4 @@
-## Zebra Electronics Feature Toggle Service
+##  Feature Toggle Service
 
 Multi-tenant Feature Toggle Service – **Node.js + TypeScript + PostgreSQL + Redis + React Admin UI**
 
