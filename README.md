@@ -1,4 +1,44 @@
-##  Feature Toggle Service
+# FeatureToggleService
+
+<p align="center">
+  <strong>Dynamic, high-performance feature flag and remote configuration engine for modern distributed architectures.</strong>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://github.com/berkezkul/FeatureToggleService/issues"><img src="https://img.shields.io/github/issues/berkezkul/FeatureToggleService" alt="Open Issues"></a>
+  <a href="https://github.com/berkezkul/FeatureToggleService/stargazers"><img src="https://img.shields.io/github/stars/berkezkul/FeatureToggleService" alt="GitHub Stars"></a>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
+</p>
+
+---
+
+## Overview
+
+**FeatureToggleService** is an open-source, lightweight feature flagging and runtime evaluation service designed for microservices, web platforms, and mobile backends. It allows engineering teams to ship code safely to production, test in staging/canary environments, perform progressive rollouts, and toggle features on-the-fly without redeploying code.
+
+### Key Features
+
+- **Dynamic Evaluation:** Evaluate feature gates in sub-millisecond latency.
+- **Targeting & Granular Rules:** Roll out features by user ID, tenant, percentage (canary/A-B testing), geographic region, or custom attributes.
+- **Environment Isolation:** Distinct separation across environments (`Development`, `Staging`, `Production`).
+- **RESTful API & Client Ready:** Simple, predictable JSON endpoints for seamless integration with frontend and backend services.
+- **Fail-Safe Fallbacks:** Sensible defaults ensure your client applications stay operational even during network partitions.
+
+---
+
+## Architecture Overview
+
+```text
+                  +---------------------------+
+                  |  Admin / Dashboard UI     |
+                  +-------------+-------------+
+                                |  (Management API)
+                                v
++-------------+         +-------------------------------+         +---------------+
+|  Client App | ------> |     FeatureToggleService      | ------> |  Persistence  |
+|  (Web/App)  |   REST  |  (Rule Engine / Cache Layer)  |         | (Database/KV) |
++-------------+         +-------------------------------+         +---------------+
 
 Multi-tenant Feature Toggle Service – **Node.js + TypeScript + PostgreSQL + Redis + React Admin UI**
 
